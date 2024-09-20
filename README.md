@@ -29,6 +29,9 @@ put this into the startup script
 Xvfb :99 -ac &
 export DISPLAY=:99
 
+# git clone and compile aprs-weather-submit from (please follow the README.md)
+https://github.com/rhymeswithmogul/aprs-weather-submit
+
 # how to enable rc.local for debian/ubuntu system :- https://www.linuxbabe.com/linux-server/how-to-enable-etcrc-local-with-systemd
 
 #install VENV environment
