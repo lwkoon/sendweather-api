@@ -100,7 +100,7 @@ except Exception as e:
 try:
     # Construct the bash command using both APRS and MetMalaysia data
     bash_command = f"""
-    /root/aprs-weather-submit/aprs-weather-submit --callsign 9W4GWK-13 --latitude 10.755255 --longitude 115.402032 --altitude 10 --server aprs.my --port 14580 --username USERCALLSIGN --password YOURPASSWORD -M "Sky conditions: {weather_condition} CALLSIGN-API WX" -T "{aprs_temperature:.2f}" -h "{aprs_humidity}" -b "{aprs_pressure:.1f                                                                                }" > /dev/null 2>&1
+    /root/aprs-weather-submit/aprs-weather-submit --callsign YOURCALLSIGN-13 --latitude 10.755255 --longitude 115.402032 --altitude 10 --server aprs.my --port 14580 --username USERCALLSIGN --password YOURPASSWORD -M "Sky conditions: {weather_condition} CALLSIGN-API WX" -T "{aprs_temperature:.2f}" -h "{aprs_humidity}" -b "{aprs_pressure:.1f                                                                                }" > /dev/null 2>&1
     """
     print("Bash command to execute:")
     print(bash_command)
